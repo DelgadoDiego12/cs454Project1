@@ -1,0 +1,45 @@
+Algorithm for CountMiddle_aa(DFA,n)
+
+    half = n / 2 - 1
+
+    Create forward array filled with zeros
+    forward[startState] = 1
+
+    Repeat half times:
+         Create temp array filled with zeros
+
+         For each state:
+              For each character in {a, b, c, d}:
+                   nextState = transition(state, character)
+
+                   temp[nextState] += forward[state]
+         forward = temp
+
+    Create backward array
+
+    For each state:
+         If the state is accepting:
+              backward[state] = 1
+         Otherwise:
+              backward[state] = 0
+
+    Repeat half times:
+         Create next array filled with zeros
+
+         For each state:
+              For each character in {a, b, c, d}:
+                   nextState = transition(state, character)
+
+                   next[state] += backward[nextState]
+
+         backward = next
+
+    answer = 0
+
+    For each state:
+         firstA = transition(state, a)
+         secondA = transition(firstA, a)
+
+         answer += forward[state] * backward[secondA]
+
+    Return answer

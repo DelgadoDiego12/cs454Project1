@@ -1,0 +1,22 @@
+Algorithm for BuildBaseDFA()
+
+    Create a DFA with alphabet {a,b,c,d}
+    Create an initial state representing ""
+
+    For each state in the DFA:
+        For each character in {a,b,c,d}:
+
+             Append the character to the state's string
+
+             If the new string has length 6:
+                If it does not contain a, b, c, and d:
+                     Mark the transition as invalid
+                     Continue to the next character
+
+                Remove the first character
+
+             Create the next state if it does not exist
+
+             Redirect all invalid transitions to the sink state
+
+             Return the DFA

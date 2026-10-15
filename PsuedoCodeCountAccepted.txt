@@ -1,0 +1,22 @@
+Algorithm for CountAccepted(DFA,n)
+
+    Create an array prev with on entry per state
+
+    For each state:
+         If the state is accepting:
+              prev[state] = 1
+         Otherwise:
+              prev[state] = 0
+
+    Repeat n times:
+        Create an array next filled with zeros
+
+        For each state:
+             For each character in {a, b, c, d}:
+                  nextState = transition(state, character)
+
+                  next[State] += prev[nextState]
+
+        prev = next
+
+    Return prev[startState]
