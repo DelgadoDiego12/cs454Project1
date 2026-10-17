@@ -1,0 +1,78 @@
+Algorithm for fasterPairedCount(paired, pairLength)
+
+    If pairLength is negative:
+        Report an error
+
+    Create an array waysToState filled with zeros
+    waysToState[startState] = 1
+
+    Repeat pairLength times:
+
+        Create an array nextCounts filled with zeros
+
+        For each non-sink state:
+
+            Get the number of ways to reach this state
+
+            If that number is 0:
+                Continue to the next state
+
+            For each character in {a,b,c,d}:
+
+                Find the next state using the original DFA
+
+                If the next state is not the sink:
+                    Add the current number of ways
+                    to nextCounts[nextState]
+
+        waysToState = nextCounts
+
+
+    If pairLength is less than 4:
+
+        Find all states that can be reached
+
+        total = 0
+
+        For each reachable leftState:
+            For each reachable rightState:
+
+                Combine the states into a paired state
+
+                If the paired state is accepting:
+                    Get the number of left and right ways
+                    Multiply those counts
+                    Add the result to total
+
+        Return total
+
+
+    Create an empty dictionary waysByEnding
+
+    For each non-sink state:
+
+        Get the number of ways to reach that state
+
+        If the number is greater than 0:
+
+            Get the last four characters of the state buffer
+
+            Add the count to waysByEnding
+            using those four characters as the key
+
+
+    total = 0
+
+    For each left ending in waysByEnding:
+
+        Get the number of ways for that left ending
+
+        For each compatible right ending:
+
+            Get the number of ways for that right ending
+
+            Multiply the left and right counts
+
+            Add the result to total
+
+    Return total
