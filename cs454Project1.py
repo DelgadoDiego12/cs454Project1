@@ -213,7 +213,7 @@ def main():
         # where x and y each have length n // 2 - 1.
         else:
             # A pair-word has n/2 - 1 symbols; each symbol is in 0..15.
-            print("Answer:", pairedCountDP(middleDFA, n // 2 - 1))
+            print("Answer:", fasterPairedCountDP(middleDFA, n // 2 - 1))
 
 
 if __name__ == "__main__":
