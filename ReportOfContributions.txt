@@ -1,0 +1,5 @@
+Jonathan Bird worked on PsuedoCodeCountMiddle_aa.txt, and Diego Delgado worked on PsuedoCodeCountAccepted.txt 
+and PsuedoCodeBuildBaseDFA.txt. We worked on these separately, and then we got together on a Discord call and
+worked out the code for both LDoubleDFA.py and cs454Project1.py over the course of several days. We also added 
+BuildMiddleAA_DFA_Faster.txt once we figured out a faster algorithm. 
+We then worked on the write-up together and reviewed everything at the end of the project.
