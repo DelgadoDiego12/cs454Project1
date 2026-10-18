@@ -1,0 +1,80 @@
+1. Count strings in L
+2. Count even-length strings with middle aa
+3. Quit
+Choice: 1
+Enter n (1-300): 0
+Invalid length.
+
+1. Count strings in L
+2. Count even-length strings with middle aa
+3. Quit
+Choice: 1
+Enter n (1-300): 301
+Invalid length.
+
+1. Count strings in L
+2. Count even-length strings with middle aa
+3. Quit
+Choice: 1
+Enter n (1-300): 2
+Answer: 16
+
+1. Count strings in L
+2. Count even-length strings with middle aa
+3. Quit
+Choice: 1
+Enter n (1-300): 1
+Answer: 4
+
+1. Count strings in L
+2. Count even-length strings with middle aa
+3. Quit
+Choice: 1
+Enter n (1-300): 50
+Answer: 3639681246440318800872
+
+1. Count strings in L
+2. Count even-length strings with middle aa
+3. Quit
+Choice: 1
+Enter n (1-300): 300
+Answer: 422712955714297652503810932962440341993232019899989706624463784777305369467441228923949791375260837098580719271155343635818936
+
+1. Count strings in L
+2. Count even-length strings with middle aa
+3. Quit
+Choice: 2
+Enter n (1-300): 0
+Invalid length.
+
+1. Count strings in L
+2. Count even-length strings with middle aa
+3. Quit
+Choice: 2
+Enter n (1-300): 301
+Invalid length.
+
+1. Count strings in L
+2. Count even-length strings with middle aa
+3. Quit
+Choice: 5
+Invalid choice.
+
+1. Count strings in L
+2. Count even-length strings with middle aa
+3. Quit
+Choice: 2
+Enter n (1-300): 50
+Answer: 82597079089857879348
+
+1. Count strings in L
+2. Count even-length strings with middle aa
+3. Quit
+Choice: 2
+Enter n (1-300): 300
+Answer: 9592830634581306740721075508021531445213884633869590897663329675105622948768499953916371410063796325180039820590441962557152
+
+1. Count strings in L
+2. Count even-length strings with middle aa
+3. Quit
+Choice:
