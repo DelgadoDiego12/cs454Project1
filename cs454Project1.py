@@ -1,4 +1,4 @@
-from L_double_dfa import buildMiddleAADFA, pairedCountDP
+from LDoubleDFA import buildMiddleAADFA, fasterPairedCount
 
 # This is our DFA class
 # alphabetSize is the number of possible characters
